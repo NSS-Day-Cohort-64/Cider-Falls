@@ -221,19 +221,19 @@ const database = {
     }],
 }
 
-const getAreas = () => {
+export const getAreas = () => {
     return structuredClone(database.Areas)
 }
 
-const getServices = () => {
+export const getServices = () => {
   return structuredClone(database.Services)
 }
 
-const getGuests = () => {
+export const getGuests = () => {
     return structuredClone(database.Guests)
 }
 
-const getAreaService = () => {
+export const getAreaService = () => {
     return structuredClone(database.AreaService)
 }
 
