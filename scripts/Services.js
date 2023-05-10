@@ -33,7 +33,7 @@ document.addEventListener(
         
         for(const areaIt of areaServiceInfo) {
             if(parseInt(serviceID) === areaIt.ServiceId) {
-                const areaValue = areaIt
+                let areaValue = areaIt
                 for(const area of areaInfo) {
                     if(area.id === areaValue.AreaId) {
                         
@@ -41,12 +41,13 @@ document.addEventListener(
                         
                     }
                 }
-                window.alert(`${serviceTarget.dataset.service} is available in ${areaEx} `)
+                
                
             }
 
 
         } 
+        window.alert(`${serviceTarget.dataset.service} is available in ${areaEx} `)
         
         }
     }

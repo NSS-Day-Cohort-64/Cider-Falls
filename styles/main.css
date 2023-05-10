@@ -1,0 +1,39 @@
+.guestsection {
+display: flex;
+justify-content: right;
+
+}
+.servicesection {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.servicesection ul {
+
+display: flex;
+align-items: baseline;
+justify-content: ;
+margin: 0 2rem;
+
+}
+
+.Title {
+    display: flex;
+    justify-content: right;
+    margin: 0 15rem;
+    font-size: 150%;
+}
+.Logo {
+    display: flex;
+    margin: 0 2rem;
+    height: 20%;
+    width: 20%;
+    
+
+}
+
+.areaSection {
+    display: flex;
+    justify-content: center;
+    
+}
