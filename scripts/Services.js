@@ -6,19 +6,18 @@ const serviceInfo = getServices()
 const areaInfo = getAreas()
 
 export const displayService = () => {
-let htmlString = `<section class ='servicesection'> <ul>
+    let htmlString = `<section class ='serviceSection'> <ul>
 <h2> Park Services: </h2>`
 
-for(const serve of serviceInfo) {
-    htmlString += `<p
+    for (const serve of serviceInfo) {
+        htmlString += `<p
         data-type="service"
         data-service="${serve.service}" 
         data-id="${serve.id}">
-     ${serve.service}
-                </p>`         
-}
-htmlString += "</ul> </section>"
-return htmlString
+     ${serve.service}</p>`
+    }
+    htmlString += "</ul> </section>"
+    return htmlString
 
 
 }
@@ -29,25 +28,28 @@ document.addEventListener(
         const serviceTarget = clickEvt.target
         let areaEx = ""
         const serviceID = serviceTarget.dataset.id
-        if(serviceTarget.dataset.type === "service") {
-        
-        for(const areaIt of areaServiceInfo) {
-            if(parseInt(serviceID) === areaIt.ServiceId) {
-                const areaValue = areaIt
-                for(const area of areaInfo) {
-                    if(area.id === areaValue.AreaId) {
-                        
-                        areaEx += area.attraction
-                        
+        if (serviceTarget.dataset.type === "service") {
+
+            for (const areaIt of areaServiceInfo) {
+                if (parseInt(serviceID) === areaIt.ServiceId) {
+                    const areaValue = areaIt
+
+                    for (const area of areaInfo) {
+                        if (area.id === areaValue.AreaId) {
+
+                            areaEx += area.attraction
+
+                        }
                     }
                 }
-                window.alert(`${serviceTarget.dataset.service} is available in ${areaEx} `)
-               
             }
+            window.alert(`${serviceTarget.dataset.service} is available in ${areaEx} `)
 
 
-        } 
-        
+
+
+
+
         }
     }
- )
+)

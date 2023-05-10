@@ -1,0 +1,97 @@
+img {
+    width: 25%;
+}
+
+header {
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+}
+
+header h1 {
+    border: 5px solid black;
+    font-size: 50px;
+}
+
+.topSection {
+    background-color: cyan;
+    border: 5px solid aliceblue;
+}
+
+.mainContainer {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.serviceSection {
+    display: inline-flex;
+    flex-flow: row wrap;
+    flex-basis: 50%;
+    font-size: larger;
+    justify-content: center;
+    height: 25%;
+    box-sizing: border-box;
+    border: 5px solid aliceblue;
+}
+.serviceSection ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+ul h2 {
+    width: 100%;
+    text-align: center;
+}
+ul p {
+    margin: 5px;
+}
+.guestSection {
+    display: flex;
+    flex-basis: 50%;
+    justify-content: center;
+    height: 100vh;
+    box-sizing: border-box;
+    border: 5px solid aliceblue;
+}
+
+
+.guestSection ul {
+    display: flex;
+    flex-flow: column;
+    font-size: xx-large;
+    height:100%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin:0;
+}
+
+.areaSection {
+    display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    width: 50%;
+    position: relative;
+    top: -660px;
+    box-sizing: border-box;
+    border-left: 5px solid aliceblue;
+    border-bottom: 5px solid aliceblue;
+}
+
+.areaSection div {
+    width:33%;
+    text-align: center;
+}
+
+.contactInfo {
+    position: relative;
+    top: -200px;
+    text-align: center;
+    box-sizing: border-box;
+    border: 5px solid aliceblue;
+}
+
+body {
+    background-color: cyan;
+}
