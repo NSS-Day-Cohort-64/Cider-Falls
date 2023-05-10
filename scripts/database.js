@@ -2,7 +2,7 @@ const database = {
     Areas: [{
         id: 1,
         area: 'northwest section',
-        attraction: 'Lodge, hotel, and resturaunt'
+        attraction: 'Lodge, hotel, resturaunt, '
     },
     {
         id: 2,

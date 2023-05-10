@@ -6,7 +6,7 @@ const Guests = getGuests()
 export const displayAreas = () => {
     let html = `<section class= "areaSection">`
     for (const area of Areas) {
-        html += `<h2 data-type = 'area' data-id = ${area.id}>${area.attraction}</h2>`     
+        html += `<div><h1> ${area.area}</h1><h4 data-type = 'area' data-id = ${area.id}>attractions: ${area.attraction}</h4></div>`     
     }
         html += `</section>`
         return html
