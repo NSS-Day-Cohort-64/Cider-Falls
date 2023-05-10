@@ -31,7 +31,7 @@ const database = {
     }
     ],
 
-    
+
     Guests: [
     { id: 1, 
       name: "John Doe" 
@@ -124,3 +124,10 @@ const database = {
     ]
 }
 
+const getAreas = () => {
+    return structuredClone(database.Areas)
+}
+
+const getServices = () => {
+  return structuredClone(database.Services)
+}
