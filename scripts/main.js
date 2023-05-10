@@ -1,7 +1,14 @@
+import { displayGuests } from "./Guests.js";
+import { displayService } from "./Services.js";
 import { displayAreas } from "./Areas.js";
-
-//6 major destinations
-const areas = displayAreas()
+const serviceDisplay = displayService()
 
 const container = document.querySelector(".mainContainer")
-container.innerHTML = areas
+
+container.innerHTML = serviceDisplay
+
+
+
+//6 major destinations
+
+
