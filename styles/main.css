@@ -73,10 +73,11 @@ ul p {
     justify-content: space-evenly;
     width: 50%;
     position: relative;
-    top: -660px;
+    top: -570px;
     box-sizing: border-box;
     border-left: 5px solid aliceblue;
     border-bottom: 5px solid aliceblue;
+    font-size: larger;
 }
 
 .areaSection div {

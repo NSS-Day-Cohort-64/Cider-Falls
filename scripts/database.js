@@ -2,17 +2,17 @@ const database = {
     Areas: [{
         id: 1,
         area: 'northwest section',
-        attraction: 'Lodge, hotel, resturaunt, '
+        attraction: 'Lodge, Hotel, Restauraunt, '
     },
     {
         id: 2,
         area: 'northern section',
-        attraction: 'lost wolf hiking trail',
+        attraction: 'Lost Wolf Hiking Trail',
     },
     {
         id: 3,
         area: 'northeast section',
-        attraction: 'chamfort river',
+        attraction: 'Chamfort River',
     },
     {
         id: 4,
@@ -22,12 +22,12 @@ const database = {
     {
         id: 5,
         area: 'southern section',
-        attraction: 'Campgrounds, park, children play areas',
+        attraction: 'Campgrounds, Park, Children play areas',
     },
     {
         id: 6,
         area: 'southeast section',
-        attraction: 'pine bluffstrail'
+        attraction: 'Pine Bluffstrail'
     }
     ],
 
